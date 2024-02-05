@@ -2,29 +2,29 @@ import "./App.css";
 import { useState } from "react";
 
 function App() {
-  const [income, setIncome] = useState(0);
-  const [balance, setBalance] = useState(0);
-  const [post, setPost] = useState(0);
-  const [deposit, setDeposit] = useState(0);
-  const [withdraw, setWithdraw] = useState(0);
+  const [Income, setIncome] = useState(0);
+  const [Balance, setBalance] = useState(0);
+  const [Post, setPost] = useState(0);
+  const [Deposit, setDeposit] = useState(0);
+  const [Withdraw, setWithdraw] = useState(0);
 
   const handleChange = (e) => {
     setPost(Number(e.target.value));
   };
 
   const handleIncome = () => {
-    setIncome((prevIncome) => prevIncome + post);
-    setBalance((prevBalance) => prevBalance + post);
+    setIncome((prevIncome) => prevIncome + Post);
+    setBalance((prevBalance) => prevBalance + Post);
   };
 
   const handleDeposit = () => {
-    setBalance((prevBalance) => prevBalance + post);
-    setDeposit((prevdeposit) => prevdeposit + post);
+    setBalance((prevBalance) => prevBalance + Post);
+    setDeposit((prevdeposit) => prevdeposit + Post);
   };
 
   const handleWithdraw = () => {
-    setBalance((prevBalance) => prevBalance - post);
-    setWithdraw((prevwithdraw) => prevwithdraw + post);
+    setBalance((prevBalance) => prevBalance - Post);
+    setWithdraw((prevwithdraw) => prevwithdraw + Post);
   };
 
   return (
@@ -65,11 +65,11 @@ function App() {
         Monthly Income
       </button>
       <div style={{ marginLeft: "10px" }}>
-        <h5>Monthly Income = {income}</h5>
+        <h5>Monthly Income = {Income}</h5>
 
-        <h5>Balance = {balance}</h5>
-        <h5>Extra Deposit = {deposit}</h5>
-        <h5>Total withDraw = {withdraw}</h5>
+        <h5>Balance = {Balance}</h5>
+        <h5>Extra Deposit = {Deposit}</h5>
+        <h5>Total withDraw = {Withdraw}</h5>
       </div>
     </div>
   );
