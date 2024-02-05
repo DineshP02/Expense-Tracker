@@ -68,7 +68,7 @@ function App() {
         <h5>Monthly Income = {income}</h5>
 
         <h5>Balance = {balance}</h5>
-        <h5>Total Deposit = {deposit}</h5>
+        <h5>Extra Deposit = {deposit}</h5>
         <h5>Total withDraw = {withdraw}</h5>
       </div>
     </div>
